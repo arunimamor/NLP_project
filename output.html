@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+    h1{
+        color: blue;
+        font-family: verdana;
+        font-size: 200%
+    }
+
+    p{
+        color: black;
+        font-family:verdana ;
+        font-size: 120%
+    }
+
+    p{
+        border: 3px solid powderblue;
+        margin: 5px;
+    }
+
+</style>
+    <meta charset="UTF-8"><br>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><br>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Podcast Summariser</title>
+
+</head>
+<body>
+    <h1> Summarised Podcast</h1>
+    <p> {{ output }} </p>
+    <audio controls>
+<!--        <source src="audio_output.ogg" type="audio/ogg">-->
+        <source src="audio/audio_output.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<!--    <audio controls>-->
+<!--        <source src={{ output }} type="audio/ogg">-->
+<!--        <source src={{ output }} type="audio/mpeg">-->
+<!--        Your browser does not support the audio element.-->
+<!--    </audio>-->
+
+</body>
+</html>
